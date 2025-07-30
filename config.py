@@ -3,20 +3,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "23621595")
+    API_HASH  = os.environ.get("API_HASH", "de904be2b4cd4efe2ea728ded17ca77d")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8023193614:AAFzQOvIth3DUb1NWaK0_qZmdRHmwUSv5ac") 
 
     # database config
     DB_NAME = os.environ.get("DB_NAME","madflixbotz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://Botmaster1stmongo:Botmaster1stmongo@cluster08283773.566pmyy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster08283773")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/4b306f4b15c23a8f22e58.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1002294203953") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001860172104"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
