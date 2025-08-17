@@ -16,7 +16,7 @@ async def start(client, message):
       InlineKeyboardButton('⚙️ Help', callback_data='help'),
       InlineKeyboardButton('💙 About', callback_data='about')
     ],[
-        InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url='https://t.me/Prime_Movie_Request_bot')
+        InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url='https://t.me/botmaster55')
     ]])
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format(user.mention), reply_markup=button)       
@@ -39,7 +39,7 @@ async def cb_handler(client, query: CallbackQuery):
                 InlineKeyboardButton('⚙️ Help', callback_data='help'),
                 InlineKeyboardButton('💙 About', callback_data='about')
                 ],[
-                InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url='https://t.me/Prime_Movie_Request_bot')
+                InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url='https://t.me/botmaster55')
                 ]])
         )
     elif data == "caption":
